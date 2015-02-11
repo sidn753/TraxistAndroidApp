@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.traxit.main"
+    android:id="@+id/contentView"
+    android:layout_width="fill_parent"
+    android:layout_height="60dp"
+    android:background="@drawable/friend_list_row"
+    android:orientation="vertical"
+    android:padding="5dp" >
+
+    <com.traxit.widget.RoundedImageView
+        android:id="@+id/friendPhotoView"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:contentDescription="@string/desc_list_item_icon"
+        android:src="@drawable/user_profile_photo"
+        app:border_width="1dp"
+        app:corner_radius="20dp"
+        app:border_color="@color/gray" />
+
+
+
+    <TextView
+        android:id="@+id/lblCellTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/friendPhotoView"
+        android:layout_toLeftOf="@+id/imgMessage"
+        android:layout_toRightOf="@+id/friendPhotoView"
+        android:text="@string/cell_title"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/lblSubTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/lblCellTitle"
+        android:layout_below="@id/lblCellTitle"
+        android:layout_toRightOf="@+id/friendPhotoView"
+        android:text="@string/cell_sub_title" />
+    <LinearLayout
+        android:id="@+id/imgMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:contentDescription="@string/image_description"
+        android:scaleType="fitCenter"
+        android:src="@drawable/mail" 
+        >
+          <Button
+            android:id="@+id/btnDeleteGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/cell_button"
+            android:text="@string/delete"
+            android:textColor="@color/red"
+            android:visibility="gone" />
+    </LinearLayout>
+
+
+
+</RelativeLayout>

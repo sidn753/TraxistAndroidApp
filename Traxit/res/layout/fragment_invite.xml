@@ -1,0 +1,43 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="com.traxit.main.CountryCodeActivity"
+    tools:ignore="MergeRootFrame" >
+
+    <include
+        android:id="@+id/include1"
+        layout="@layout/searchbox" />
+
+    <ListView
+        android:id="@+id/contactsListView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnManualInvite"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/include1"
+        android:divider="@color/list_divider"
+        android:dividerHeight="1dp" >
+
+    </ListView>
+
+    <Button
+        android:id="@+id/btnManualInvite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="false"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/invite_button"
+        android:paddingBottom="10dp"
+        android:paddingLeft="50dp"
+        android:paddingRight="50dp"
+        android:paddingTop="10dp"
+        android:text="@string/manual_invite"
+        android:textColor="#b4b4b4" />
+
+</RelativeLayout>

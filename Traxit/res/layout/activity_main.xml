@@ -1,0 +1,183 @@
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res/com.traxit.main">
+
+    <!-- Framelayout to display Fragments -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/titlebar_gradient" >
+
+            <Button
+                android:id="@+id/titlebarLeftButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/icon_menu" />
+            <Button
+                android:id="@+id/titlebarLeftCancelButton"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:textSize="18sp"
+                android:visibility="gone"
+                android:textColor="@color/gray"
+                android:background="@drawable/title_right_button" />
+
+            <TextView
+                android:id="@+id/titlebarTitleLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="@string/cell_title"
+                android:textSize="20sp"
+                android:textColor="@color/black" />
+            
+			<com.traxit.widget.SegmentedRadioGroup
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_margin="5dip"
+				android:orientation="horizontal"
+				android:id="@+id/titlebarSegmentButton"
+				android:checkedButton="@+id/button_one"
+				android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:visibility="gone">
+                
+				<RadioButton android:id="@+id/segGroup"
+					android:minWidth="40dip"
+					android:minHeight="33dip"
+					android:text="@string/groups"
+					android:textSize="17sp"
+					android:button="@null"
+					android:gravity="center"
+					android:textColor="@color/radio_colors" 
+					android:paddingLeft="20dp"
+					android:paddingRight="10dp"
+					android:checked="true"/>
+
+				<RadioButton android:id="@+id/segFriend"
+					android:minWidth="40dip"
+					android:minHeight="33dip"
+					android:text="@string/friends"
+					android:button="@null"
+					android:gravity="center"
+					android:textSize="17sp"
+					android:textColor="@color/radio_colors" 
+					android:paddingLeft="10dp"
+					android:paddingRight="10dp"/>
+			</com.traxit.widget.SegmentedRadioGroup>
+            <Button
+                android:id="@+id/titlebarRightButton"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/title_right_button"
+                android:padding="10dp"
+                android:textSize="18sp"
+                android:visibility="gone"
+                android:textColor="@color/gray" />
+             <Button
+                android:id="@+id/titlebarRightImageButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/icon_add"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+
+       <FrameLayout
+        android:id="@+id/frame_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    </LinearLayout>
+
+
+
+    <!-- Listview to display slider menu -->
+
+    <LinearLayout
+        android:id="@+id/menuLayout"
+        android:layout_width="280dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="@color/list_background"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+          <com.traxit.widget.RoundedImageView
+              android:id="@+id/userProfileImageView"
+              android:layout_width="100dp"
+              android:layout_height="100dp"
+              android:layout_marginTop="10dp"
+              android:layout_centerHorizontal="true"
+              android:contentDescription="@string/image_description"
+              android:src="@drawable/img_user_placeholder"
+              app:border_width="2dp"
+        	  app:corner_radius="50dp"
+        	  app:border_color="@color/gray" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/userEmailLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="@string/email"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/list_divider"
+            android:paddingTop="5dp" >
+
+        </RelativeLayout>
+
+      <ListView
+          android:id="@+id/list_slidermenu"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:choiceMode="singleChoice"
+          android:divider="@color/menu_list_divider"
+          android:dividerHeight="1dp"
+          android:listSelector="@drawable/list_selector" />
+
+    </LinearLayout>
+    <!-- <ListView
+        android:id="@+id/list_slidermenu"
+        android:layout_width="280dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:choiceMode="singleChoice"
+        android:divider="@color/list_divider"
+        android:dividerHeight="1dp"        
+        android:listSelector="@drawable/list_selector"
+        android:background="@color/list_background"/> -->
+</android.support.v4.widget.DrawerLayout>

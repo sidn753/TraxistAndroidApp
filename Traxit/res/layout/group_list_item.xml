@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/FrameLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="50dp" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:weightSum="100" >
+
+        <TextView
+            android:id="@+id/lblContentTail"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="20"
+            android:gravity="center_horizontal" />
+
+        <Button
+            android:id="@+id/btnShowMember"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="30"
+            android:background="@drawable/cell_button"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:text="@string/member"
+            android:textColor="@color/gray" />
+
+        <Button
+            android:id="@+id/btnChangeGroupName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="25"
+            android:background="@drawable/cell_button"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:text="@string/change"
+            android:textColor="@color/gray" />
+
+        <Button
+            android:id="@+id/btnDeleteGroup"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="25"
+            android:background="@drawable/cell_button"
+            android:text="@string/delete"
+            android:textColor="@color/red" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/groupItemContentView"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white" >
+
+        <TextView
+            android:id="@+id/lblListHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:paddingLeft="10dp"
+            android:text="@string/cell_title"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/lblGroupCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingRight="10dp"
+            android:text="@string/count" />
+    </RelativeLayout>
+
+</FrameLayout>

@@ -1,0 +1,35 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="com.traxit.main.LoginActivity"
+    tools:ignore="MergeRootFrame" >
+
+    <Button
+        android:id="@+id/titlebarLeftButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="22dp"
+        android:layout_marginTop="24dp"
+        android:gravity="center_vertical|center_horizontal|fill"
+        android:text="Send"
+        android:textColor="@color/gray"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/titlebarTitleLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/titlebarLeftButton"
+        android:layout_marginLeft="80dp"
+        android:layout_toRightOf="@+id/titlebarLeftButton"
+        android:paddingLeft="10dp"
+        android:text="@string/cell_title"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+</RelativeLayout>

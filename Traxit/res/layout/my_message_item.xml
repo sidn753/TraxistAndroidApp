@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.traxit.main"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="20dp"
+    android:paddingLeft="8dp"
+    android:paddingRight="8dp"
+    android:paddingTop="20dp" >
+
+    <com.traxit.widget.RoundedImageView
+        android:id="@+id/friendPhotoView"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:contentDescription="@string/desc_list_item_icon"
+        android:src="@drawable/user_profile_photo"
+        app:border_width="1dp"
+        app:corner_radius="20dp"
+         app:border_color="#c9c9c9"/>
+
+    <TextView
+        android:id="@+id/messageTimeLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/friendPhotoView"
+        android:layout_toLeftOf="@+id/imgFlag"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/messageLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/imgFlag"
+        android:layout_marginRight="10dp"
+        android:layout_toLeftOf="@+id/friendPhotoView"
+        android:background="@drawable/my_message_label"
+        android:padding="5dp"
+        />
+    
+     <ImageView
+         android:id="@+id/imgFlag"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignBottom="@+id/friendPhotoView"
+         android:layout_toLeftOf="@+id/friendPhotoView"
+         android:contentDescription="@string/image_description"
+         android:src="@drawable/my_message_tail" />
+
+</RelativeLayout>

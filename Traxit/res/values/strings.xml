@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Traxit</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="app_title">TRAXIT</string>
+    <string name="email">Email</string>
+	<string name="password">Password</string>
+	<string name="forgot_password">Forgot Password?</string>
+	<string name="login">Login</string>
+	<string name="singup">SignUp</string>
+	<string name="manual_invite">Manual Invite</string>
+	<string name="manual_invite_title">Please type in a friend\'s email or phone number.</string>
+	<string name="change_group_dialog_title">Please type new group name.</string>
+	<string name="add_group_dialog_title">Please type new group name.</string>
+	<string name="accept"><u>Accept</u></string>
+	<string name="decline">Decline</string>
+	<string name="first_name">First Name</string>
+	<string name="last_name">Last Name</string>
+	<string name="phone_number">Phone_Number</string>
+	<string name="register">Register!</string>
+	<string name="country_flag">Country Flag</string>
+	<string name="country_code">Country Code</string>
+	<string name="country_code_search_hint">country name</string>
+	<string name="cell_title">Title</string>
+	<string name="cell_sub_title">Sub Title</string>
+	<string name="message_count">15</string>
+	<string name="image_description">image</string>
+	<string name="send">Send</string>
+	<string name="member"><u>Member</u></string>
+	<string name="change">Change</string>
+	<string name="delete">Delete</string>
+	<string name="count">1</string>
+	<string name="done">Done</string>
+	<string name="add">Add</string>
+	<string name="members">Members</string>
+	<string name="cancel">Cancel</string>
+	<string name="friends">Friends</string>
+	<string name="groups">Groups</string>
+	<string name="select_photo_sheet_title">Select Photo</string>
+	<string name="take_picture">Take Photo</string>
+	<string name="gallery">Choose From Library</string>
+	
+	
+	<string name="title_activity_main">Android Push Notifications</string>
+    <string name="error_config">Please set the %1$s constant and recompile the app.</string>
+    <string name="already_registered">Device is already registered on server.</string>
+    <string name="gcm_registered">GCM: device successfully registered!</string>
+    <string name="gcm_unregistered">GCM: device successfully unregistered!</string>
+    <string name="gcm_message">GCM: you got message!</string>
+    <string name="gcm_error">GCM: error (%1$s).</string>
+    <string name="gcm_recoverable_error">GCM: recoverable error (%1$s).</string>
+    <string name="gcm_deleted">GCM: server deleted %1$d pending messages!</string>
+    <string name="server_registering">Trying (attempt %1$d/%2$d) to register device on Demo Server.</string>
+    <string name="server_registered">Demo Server: successfully added device!</string>
+    <string name="server_unregistered">Demo Server: successfully removed device!</string>
+    <string name="server_register_error">Could not register device on Demo Server after %1$d attempts.</string>
+    <string name="server_unregister_error">Could not unregister device on Demo Server (%1$s).</string>
+    
+
+	<string name="activity_contacts_list">Contacts List</string>
+    <string name="activity_contact_detail">Contact Detail</string>
+    <string name="contacts_list_search_results_title">Contacts List Search for \"%s\"</string>
+    <string name="app_description">This is a sample app, demonstrating use of the Android system Contacts Provider.</string>
+    <string name="imageview_description">Contact Thumbnail</string>
+    <string name="address_button_description">View Address</string>
+    <string name="menu_search">Search</string>
+    <string name="menu_add_contact">Add Contact</string>
+    <string name="menu_edit_contact">Edit Contact</string>
+    <string name="no_contacts">No Contacts Found</string>
+    <string name="no_contact_selected">No Contact Selected</string>
+    <string name="search_hint">Find contacts</string>
+
+    <!-- Used for the AlphabetIndexer in ContactsListFragment to provide quick navigation by
+         alphabet using ListView fast scroll. -->
+    <string name="alphabet">ABCDEFGHIJKLMNOPQRSTUVWXYZ</string>
+
+    <!-- When using ContactsContract.Contacts#CONTENT_FILTER_URI to search contacts, a match occurs
+         when using a number of different fields, such as name, e-mail address, address, phone
+         number, etc. When a match occurs that is not the name, there is currently no way to tell
+         which other field was matched. This string is displayed in the secondary display text in
+         ContactsListFragment when a search query match occurs that is not the display name.
+         -->
+    <string name="search_match_other">Matches Other Field</string>
+
+    <string name="no_address">No addresses found</string>
+    <string name="no_intent_found">No application found to handle this action</string>
+    
+	
+	<!-- Nav Drawer Menu Items -->
+    <string-array name="nav_drawer_items">
+        <item >Contacts</item>
+        <item >Groups</item>
+        <item >Profile</item>
+        <item >Messages</item>
+        <item >Invite a Friend</item>
+        <item >Save Password</item>
+        <item >Visibility</item>
+        <item >Logout</item>
+    </string-array>
+    
+    <!-- Nav Drawer List Item Icons -->
+    <!-- Keep them in order as the titles are in -->
+    <array name="nav_drawer_icons">
+        <item>@drawable/icon_contacts</item>
+        <item>@drawable/icon_group</item>
+        <item>@drawable/icon_profile</item>
+        <item>@drawable/icon_message</item>
+        <item>@drawable/icon_invite</item>
+        <item>@drawable/icon_setting</item>
+        <item>@drawable/icon_visibility</item>
+        <item>@drawable/icon_logout</item>
+    </array>
+    <!-- Content Description -->
+    <string name="desc_list_item_icon">Item Icon</string>
+    
+    
+    <!-- Custom Action Bar title -->
+
+
+</resources>

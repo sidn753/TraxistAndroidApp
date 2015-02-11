@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.traxit.main"
+    android:id="@+id/LinearLayout2"
+    android:layout_width="fill_parent"
+    android:layout_height="50dp"
+    android:background="@color/white"
+    android:gravity="center_vertical"
+    android:padding="5dp" >
+
+    <com.traxit.widget.RoundedImageView
+        android:id="@+id/friendPhotoView"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:contentDescription="@string/desc_list_item_icon"
+        android:src="@drawable/user_profile_photo"
+        app:border_color="@color/gray"
+        app:border_width="1dp"
+        app:corner_radius="20dp" />
+
+    <TextView
+        android:id="@+id/lblCellTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:text="@string/cell_title"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+</LinearLayout>
